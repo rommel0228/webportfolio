@@ -4,41 +4,42 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Web Developer Portfolio</title>
-
+		<title>Full Stack Web Developer</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./index.css">
 
 	</head>
 	<body>
 			<!-- NavBar Start -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-			            <a href="#" class="navbar-brand"><h3>Rommel Esteves</h3></a>
-			            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="$navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			                <span class="navbar-toggler-icon"></span>
-			            </button>
-			            
-			            <div class="collapse navbar-collapse" id="navbarNav">
-			                <ul class="navbar-nav ml-auto">
-			                    <li class="nav-item active">
-			                        <a href="#" class="nav-link">About Me <span class="sr-only">(current)</span></a>
-			                    </li>
-			                    <li class="nav-item">
-			                        <a href="#" class="nav-link">Projects</a>
-			                    </li>
-			                    <li class="nav-item">
-			                        <a href="#" class="nav-link">Contact Me</a>
-			                    </li>
-			                </ul>
-			            </div>
-			        </nav>
+			<div id="landing">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+	            <a href="#" class="navbar-brand"><h3>Rommel Esteves</h3></a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="$navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+	            
+	            <div class="collapse navbar-collapse" id="navbarNav">
+	                <ul class="navbar-nav ml-auto">
+	                    <li class="nav-item active">
+	                        <a href="#aboutme" class="nav-link">About Me <span class="sr-only">(current)</span></a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a href="#projects" class="nav-link">Projects</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a href="#contact" class="nav-link">Contact Me</a>
+	                    </li>
+	                </ul>
+	            </div>
+	       </nav>
 			<!-- NavBar End-->
 
 			<!-- About me Start -->
-			<div>
+			<div id=aboutme>
 				<div class="d-flex text-center justify-content-center">
 					<div">
 						<h1 class="mt-5">Hi, I am Rommel Esteves.</h1> 
@@ -50,48 +51,58 @@
 				</div>
 			</div>
 			<!-- About me End-->
-
-			<!-- Portfolio Start -->
-			
-			<div class="container-fluid bg-secondary row">
-				<h2 class="text-center my-5">Here are some of the projects I have done in the past.</h2>
-				<h2 class="text-center">MNLTour</h2>
-				<div class="container-fluid bg-dark text-white text-center m-2.5 col-3">
-					<img width=50% src="https://divinity.uchicago.edu/sites/default/files/imce/Sightings_images/Xiaomi-VR.jpg" class="img-fluid d-flex justify-content-center">
-					<p class="container-fluid">MNLTour is a virtual tour system for selected tourist spots situated within the city of Manila. It utilizes 360-degree images, 2D images, voice recordings, and virtual reality technology to offer an immersive user experience of the virtual environment. The virtual tour system was developed using the Unity3D software and was then integrated into web and mobile applications accessible through web browsers and android smartphones, respectively. MNLTour aims to promote the wonders of Manila city by showcasing some of its historical tourist spots that have been severely affected by the outbreak of the COVID-19 pandemic.</p>
-				</div>	
-
 			</div>
-			<!-- Portfolio End-->
+
+			<!-- Project Start -->
+			<div id="projects" class="mt-5 pt-5">
+				<h3 class="text-center my-5">Here are some of the projects I have done in the past related to programming.</h3>
+				<div class="container-fluid d-flex flex-row justify-content-center col-12">
+						<div class="d-flex flex-column bg-dark text-white text-center col-4">
+							<img src="https://divinity.uchicago.edu/sites/default/files/imce/Sightings_images/Xiaomi-VR.jpg" class="img-fluid d-flex justify-content-center my-5>
+							<h3 class="text-center">MNLTour</h3>
+							<p class="container-fluid">MNLTour is a virtual tour system for selected tourist spots situated within the city of Manila. It utilizes 360-degree images, 2D images, voice recordings, and virtual reality technology to offer an immersive user experience of the virtual environment. The virtual tour system was developed using the Unity3D software and was then integrated into web and mobile applications accessible through web browsers and android smartphones, respectively.</p>
+						</div>	
+
+						<div class="d-flex flex-column bg-dark text-white text-center col-4">
+							<img src="https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2019/02/21/identify-birds-1.gif" class="img-fluid d-flex justify-content-center my-5">
+							<h3 class="text-center">Endemic Bird Image Classifier</h3>
+							<p class="container-fluid">This project uses deep learning to classify an image of endemic birds based on their extinction threat level. The data used in this image classifier is based on data sets gather from endemic birds that is located in the Philippines </p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!-- Project End--> 
 
 			<!-- Contact Me Start -->
-			<h2 class="d-flex flex-column text-center mt-5">Contact Me</h2>
-			<div class="mt-1 text-center justify-content-center row">
-				<form class="min-vh-80 d-flex flex-column bg-primary col-xl-4 col-lg-8 col-md-8 col-sm-12">
-				  <div class="form-group">
-				    <label for="name">Name</label>
-				    <input type="text" class="form-control" id="name" placeholder="Your Name">
-				  </div>
-				  <div class="form-group">
-				    <label for="email">Email</label>
-				    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-				  </div>
-				  <div class="form-group">
-				    <label for="contact_number">Contact Number</label>
-				    <input type="text" class="form-control" id="contact_number" placeholder="+63 900 000 0000">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlTextarea1">Message</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				  </div>
-				  <div>
-				  	<button class="mb-3 bg-dark text-light btn " type="submit"> Send Email</button>
-				  </div>
-				</form>
+			<div id="contact">
+				<h2 class="text-center ">Contact Me</h2>
+				<div class="d-flex mt-1 text-center justify-content-center">
+					<div class="d-flex">
+						<form class="min-vh-80 d-flex flex-column bg-primary">
+						  <div class="form-group">
+						    <label for="name">Name</label>
+						    <input type="text" class="form-control" id="name" placeholder="Your Name">
+						  </div>
+						  <div class="form-group">
+						    <label for="email">Email</label>
+						    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+						  </div>
+						  <div class="form-group">
+						    <label for="contact_number">Contact Number</label>
+						    <input type="text" class="form-control" id="contact_number" placeholder="+63 900 000 0000">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlTextarea1">Message</label>
+						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+						  <div>
+						  	<button class="mb-3 bg-dark text-light btn " type="submit"> Send Email</button>
+						  </div>
+						</form>
+					</div>
+				</div>
 			</div>
 			<!-- Contact Me End -->
-
-
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
